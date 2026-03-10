@@ -1,19 +1,20 @@
 <!DOCTYPE html>
-<html lang="id" class="scroll-smooth">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home | FANS_Z Informatika 4</title>
+    <title>About Us | FANS_Z Informatika 4</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/lucide@latest"></script>
     <style>
         body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #0f172a; }
         .glass { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.05); }
-        .hero-gradient { background: radial-gradient(circle at top right, #1e3a8a, transparent), radial-gradient(circle at bottom left, #312e81, transparent); }
+        .member-img { object-fit: cover; filter: grayscale(20%); transition: all 0.5s ease; }
+        .member-img:hover { filter: grayscale(0%); transform: scale(1.05); }
     </style>
 </head>
-<body class="text-slate-200 min-h-screen hero-gradient">
+<body class="text-slate-200 min-h-screen">
 
     <!-- Navigasi -->
     <nav class="fixed top-0 w-full z-50 glass">
@@ -23,8 +24,8 @@
                 <span class="text-xl font-extrabold tracking-tighter text-white">FANS_Z<span class="text-blue-500 italic">.</span></span>
             </div>
             <div class="hidden md:flex gap-8 text-sm font-medium uppercase tracking-widest text-slate-400">
-                <a href="index.html" class="text-blue-400">Home</a>
-                <a href="about.html" class="hover:text-white transition">About Us</a>
+                <a href="index.html" class="hover:text-white transition">Home</a>
+                <a href="about.html" class="text-blue-400">About Us</a>
                 <a href="projects.html" class="hover:text-white transition">Projects</a>
                 <a href="galleries.html" class="hover:text-white transition">Galleries</a>
                 <a href="contact.html" class="hover:text-white transition">Contact Us</a>
@@ -32,56 +33,82 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <main class="pt-32 pb-20 px-6">
-        <div class="max-w-7xl mx-auto text-center flex flex-col items-center">
-            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-xs font-bold mb-8 animate-pulse italic">
-                <i data-lucide="cpu" class="w-4 h-4"></i> Kelompok Informatika 4
-            </div>
-            <h1 class="text-6xl md:text-8xl font-black text-white leading-tight tracking-tighter mb-6">
-                Membangun Masa <br>
-                <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-indigo-500 italic">Depan Digital.</span>
-            </h1>
-            <p class="text-xl text-slate-400 max-w-2xl leading-relaxed mb-10">
-               "Mentransformasi Baris Kode Menjadi Solusi Masa Depan." Kami adalah kolaborasi kreatif siswa XII Informatika yang percaya bahwa teknologi adalah kunci untuk mempermudah kehidupan manusia. Bersama FANS_Z, kami merakit ide menjadi nyata.
-            </p>
-            <div class="flex flex-wrap gap-4 justify-center">
-                <a href="about.html" class="px-8 py-4 bg-blue-600 hover:bg-blue-500 text-white font-bold rounded-xl transition shadow-lg shadow-blue-500/20 flex items-center gap-2">
-                    Mulai Eksplorasi <i data-lucide="chevron-right" class="w-5 h-5"></i>
-                </a>
-                <a href="projects.html" class="px-8 py-4 bg-white/5 hover:bg-white/10 text-white font-bold rounded-xl border border-white/10 transition">
-                    Lihat Portofolio
-                </a>
+    <section class="pt-32 pb-20 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-black text-white mb-4">ANGGOTA TIM</h2>
+                <div class="h-1.5 w-20 bg-blue-600 mx-auto rounded-full"></div>
+                <p class="text-slate-400 mt-4 max-w-xl mx-auto">Berkenalan dengan para pengembang muda dibalik FANS_Z Informatika 4.</p>
             </div>
 
-            <!-- Stats -->
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mt-24 w-full max-w-4xl">
-                <div class="glass p-6 rounded-3xl">
-                    <h3 class="text-3xl font-bold text-white mb-1">5</h3>
-                    <p class="text-xs text-slate-500 uppercase tracking-widest font-bold">Anggota Tim</p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
+                <!-- Falisya -->
+                <div class="glass p-4 rounded-[2.5rem] text-center group hover:border-blue-500/50 transition duration-500">
+                    <div class="aspect-square rounded-[2rem] overflow-hidden mb-6 border border-white/5">
+                        <img src="https://lh3.googleusercontent.com/d/16RvzJqC0k57FvYmz18Mwpj6iSo5rDpC6" alt="Foto Falisya" class="member-img w-full h-full" onerror="this.src='https://ui-avatars.com/api/?name=Falisya&background=2563eb&color=fff'">
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-1 group-hover:text-blue-400 transition">Falisya</h3>
+                    <p class="text-[10px] text-slate-500 uppercase tracking-widest font-black mb-4">ketua tim</p>
+                    <div class="flex justify-center gap-3">
+                        <a href="#" class="text-slate-500 hover:text-white"><i data-lucide="instagram" class="w-4 h-4"></i></a>
+                    </div>
                 </div>
-                <div class="glass p-6 rounded-3xl">
-                    <h3 class="text-3xl font-bold text-white mb-1">8</h3>
-                    <p class="text-xs text-slate-500 uppercase tracking-widest font-bold">Proyek Selesai</p>
+
+                <!-- Adinda -->
+                <div class="glass p-4 rounded-[2.5rem] text-center group hover:border-blue-500/50 transition duration-500">
+                    <div class="aspect-square rounded-[2rem] overflow-hidden mb-6 border border-white/5">
+                        <img src="https://lh3.googleusercontent.com/d/1pug2dX7QY0jeSH8pQCreRPt2qk8UycBf" alt="Foto Adinda" class="member-img w-full h-full" onerror="this.src='https://ui-avatars.com/api/?name=Adinda&background=8b5cf6&color=fff'">
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-1 group-hover:text-blue-400 transition">Adinda</h3>
+                    <p class="text-[10px] text-slate-500 uppercase tracking-widest font-black mb-4">anggota</p>
+                    <div class="flex justify-center gap-3">
+                        <a href="#" class="text-slate-500 hover:text-white"><i data-lucide="instagram" class="w-4 h-4"></i></a>
+                    </div>
                 </div>
-                <div class="glass p-6 rounded-3xl">
-                    <h3 class="text-3xl font-bold text-white mb-1">XII</h3>
-                    <p class="text-xs text-slate-500 uppercase tracking-widest font-bold">Kelas Utama</p>
+
+                <!-- Nopy -->
+                <div class="glass p-4 rounded-[2.5rem] text-center group hover:border-blue-500/50 transition duration-500">
+                    <div class="aspect-square rounded-[2rem] overflow-hidden mb-6 border border-white/5">
+                        <img src="https://lh3.googleusercontent.com/d/1z4T8J0tlTWcaqYy_Yr8HazmxCL17TSzd" alt="Foto Nopy" class="member-img w-full h-full" onerror="this.src='https://ui-avatars.com/api/?name=Nopy&background=10b981&color=fff'">
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-1 group-hover:text-blue-400 transition">Nopy</h3>
+                    <p class="text-[10px] text-slate-500 uppercase tracking-widest font-black mb-4">anggota</p>
+                    <div class="flex justify-center gap-3">
+                        <a href="#" class="text-slate-500 hover:text-white"><i data-lucide="github" class="w-4 h-4"></i></a>
+                    </div>
                 </div>
-                <div class="glass p-6 rounded-3xl">
-                    <h3 class="text-3xl font-bold text-white mb-1">2023</h3>
-                    <p class="text-xs text-slate-500 uppercase tracking-widest font-bold">Angkatan</p>
+
+                <!-- Selly -->
+                <div class="glass p-4 rounded-[2.5rem] text-center group hover:border-blue-500/50 transition duration-500">
+                    <div class="aspect-square rounded-[2rem] overflow-hidden mb-6 border border-white/5">
+                        <img src="https://lh3.googleusercontent.com/d/1jXnjLiycVz5K4Jmo9qno6LdgYrhshg8c" alt="Foto Selly" class="member-img w-full h-full" onerror="this.src='https://ui-avatars.com/api/?name=Selly&background=f59e0b&color=fff'">
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-1 group-hover:text-blue-400 transition">Selly</h3>
+                    <p class="text-[10px] text-slate-500 uppercase tracking-widest font-black mb-4">anggota</p>
+                    <div class="flex justify-center gap-3">
+                        <a href="#" class="text-slate-500 hover:text-white"><i data-lucide="instagram" class="w-4 h-4"></i></a>
+                    </div>
+                </div>
+
+                <!-- Zaskia -->
+                <div class="glass p-4 rounded-[2.5rem] text-center group hover:border-blue-500/50 transition duration-500">
+                    <div class="aspect-square rounded-[2rem] overflow-hidden mb-6 border border-white/5">
+                        <img src="https://lh3.googleusercontent.com/d/1tHJVfhzzFPHSXlT01ITfM6wLtQvXhwI6" alt="Foto Zaskia" class="member-img w-full h-full" onerror="this.src='https://ui-avatars.com/api/?name=Zaskia&background=ef4444&color=fff'">
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-1 group-hover:text-blue-400 transition">Zaskia</h3>
+                    <p class="text-[10px] text-slate-500 uppercase tracking-widest font-black mb-4">anggota</p>
+                    <div class="flex justify-center gap-3">
+                        <a href="#" class="text-slate-500 hover:text-white"><i data-lucide="instagram" class="w-4 h-4"></i></a>
+                    </div>
                 </div>
             </div>
         </div>
-    </main>
+    </section>
 
     <footer class="py-10 border-t border-white/5 text-center">
-        <p class="text-slate-500 text-sm">© 2023 FANS_Z Informatika 4. XII Informatika Squad.</p>
+        <p class="text-slate-500 text-sm">© 2024 FANS_Z Informatika 4. XII Informatika Squad.</p>
     </footer>
 
-    <script>
-        lucide.createIcons();
-    </script>
+    <script>lucide.createIcons();</script>
 </body>
 </html>
