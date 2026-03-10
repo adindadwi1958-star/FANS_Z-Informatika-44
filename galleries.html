@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galleries | FANS_Z Informatika 4</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #0f172a; }
+        .glass { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.05); }
+    </style>
+</head>
+<body class="text-slate-200 min-h-screen">
+
+    <nav class="fixed top-0 w-full z-50 glass">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center gap-2">
+                <div class="bg-blue-600 p-1.5 rounded-lg"><i data-lucide="terminal" class="text-white w-5 h-5"></i></div>
+                <span class="text-xl font-extrabold tracking-tighter text-white">FANS_Z<span class="text-blue-500 italic">.</span></span>
+            </div>
+            <div class="hidden md:flex gap-8 text-sm font-medium uppercase tracking-widest text-slate-400">
+                <a href="index.html" class="hover:text-white transition">Home</a>
+                <a href="about.html" class="hover:text-white transition">About Us</a>
+                <a href="projects.html" class="hover:text-white transition">Projects</a>
+                <a href="galleries.html" class="text-blue-400">Galleries</a>
+                <a href="contact.html" class="hover:text-white transition">Contact Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="pt-32 pb-20 px-6">
+        <div class="max-w-7xl mx-auto text-center">
+            <h2 class="text-4xl font-black text-white mb-16 uppercase tracking-tighter italic">Timeline Aktivitas</h2>
+            
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <!-- Gallery Item 1 -->
+                <div class="glass aspect-square rounded-[2rem] overflow-hidden relative group">
+                    <div class="absolute inset-0 bg-gradient-to-br from-blue-600/20 to-transparent flex items-center justify-center">
+                        <i data-lucide="image" class="w-8 h-8 opacity-20 group-hover:scale-150 transition duration-500"></i>
+                    </div>
+                    <div class="absolute bottom-0 w-full p-4 bg-black/60 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition duration-300">
+                        <p class="text-[10px] font-bold uppercase tracking-widest text-white">Project Briefing</p>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 2 -->
+                <div class="glass aspect-square rounded-[2rem] overflow-hidden relative group">
+                    <div class="absolute inset-0 bg-gradient-to-br from-indigo-600/20 to-transparent flex items-center justify-center">
+                        <i data-lucide="video" class="w-8 h-8 opacity-20 group-hover:scale-150 transition duration-500"></i>
+                    </div>
+                    <div class="absolute bottom-0 w-full p-4 bg-black/60 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition duration-300 text-center">
+                        <i data-lucide="play" class="w-4 h-4 mx-auto text-white"></i>
+                    </div>
+                </div>
+
+                <!-- More placeholders -->
+                <div class="glass aspect-square rounded-[2rem] overflow-hidden relative group">
+                    <div class="absolute inset-0 bg-gradient-to-br from-emerald-600/20 to-transparent flex items-center justify-center">
+                        <i data-lucide="image" class="w-8 h-8 opacity-20"></i>
+                    </div>
+                </div>
+                <div class="glass aspect-square rounded-[2rem] overflow-hidden relative group">
+                    <div class="absolute inset-0 bg-gradient-to-br from-rose-600/20 to-transparent flex items-center justify-center">
+                        <i data-lucide="image" class="w-8 h-8 opacity-20"></i>
+                    </div>
+                </div>
+                <div class="glass aspect-square rounded-[2rem] overflow-hidden relative group">
+                    <div class="absolute inset-0 bg-gradient-to-br from-amber-600/20 to-transparent flex items-center justify-center">
+                        <i data-lucide="image" class="w-8 h-8 opacity-20"></i>
+                    </div>
+                </div>
+                <div class="glass aspect-square rounded-[2rem] overflow-hidden relative group">
+                    <div class="absolute inset-0 bg-gradient-to-br from-purple-600/20 to-transparent flex items-center justify-center">
+                        <i data-lucide="video" class="w-8 h-8 opacity-20"></i>
+                    </div>
+                </div>
+                <div class="glass aspect-square rounded-[2rem] overflow-hidden relative group">
+                    <div class="absolute inset-0 bg-gradient-to-br from-blue-600/20 to-transparent flex items-center justify-center">
+                        <i data-lucide="image" class="w-8 h-8 opacity-20"></i>
+                    </div>
+                </div>
+                <div class="glass aspect-square rounded-[2rem] overflow-hidden relative group">
+                    <div class="absolute inset-0 bg-gradient-to-br from-slate-600/20 to-transparent flex items-center justify-center">
+                        <i data-lucide="image" class="w-8 h-8 opacity-20"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>lucide.createIcons();</script>
+</body>
+</html>
