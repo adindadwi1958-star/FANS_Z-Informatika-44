@@ -10,10 +10,12 @@
     <style>
         body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #0f172a; }
         .glass { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.05); }
+        .hero-gradient { background: radial-gradient(circle at top right, #1e3a8a, transparent), radial-gradient(circle at bottom left, #312e81, transparent); }
     </style>
 </head>
-<body class="text-slate-200 min-h-screen">
+<body class="text-slate-200 min-h-screen hero-gradient">
 
+    <!-- Navigasi -->
     <nav class="fixed top-0 w-full z-50 glass">
         <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
             <div class="flex items-center gap-2">
@@ -32,52 +34,69 @@
 
     <section class="pt-32 pb-20 px-6">
         <div class="max-w-7xl mx-auto">
-            <div class="grid lg:grid-cols-2 gap-16 items-start">
-                <div class="space-y-12">
-                    <div>
-                        <h2 class="text-4xl font-black text-white uppercase tracking-tighter mb-4 italic">Hubungi Kami</h2>
-                        <p class="text-slate-400">Ingin berkolaborasi atau punya pertanyaan? Tim FANS_Z siap menjawab pesan Anda.</p>
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-black text-white mb-4 uppercase tracking-tighter italic">Hubungi Kami</h2>
+                <p class="text-slate-400 max-w-xl mx-auto text-sm">Punya pertanyaan atau ingin berkolaborasi? Kami siap mendengar ide-ide hebat Anda.</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <!-- Info Kontak -->
+                <div class="space-y-6">
+                    <div class="glass p-8 rounded-[2.5rem] flex items-start gap-6 group hover:border-blue-500/50 transition duration-500">
+                        <div class="bg-blue-600/20 p-4 rounded-2xl text-blue-400">
+                            <i data-lucide="map-pin" class="w-6 h-6"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-bold text-white mb-2">Lokasi Workshop</h3>
+                            <p class="text-slate-400 text-sm mb-4 leading-relaxed">Jl. Pendidikan No. 4, Lab Informatika XII, Gedung Utama.</p>
+                            <!-- Link Maps -->
+                            <a href="https://share.google/ZeEj7RdqavkR1Q80V" target="_blank" class="inline-flex items-center gap-2 text-blue-400 text-sm font-bold hover:underline">
+                                Buka di Google Maps <i data-lucide="external-link" class="w-4 h-4"></i>
+                            </a>
+                        </div>
                     </div>
 
-                    <div class="space-y-6">
-                        <div class="flex items-center gap-5 group">
-                            <div class="w-12 h-12 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center text-blue-500 transition group-hover:bg-blue-500 group-hover:text-white">
-                                <i data-lucide="map-pin"></i>
-                            </div>
-                            <div>
-                                <p class="text-[10px] font-black text-slate-500 uppercase tracking-widest">Lokasi</p>
-                                <p class="text-white font-medium">Lab Informatika, SMA Negeri 4, Jakarta</p>
-                            </div>
+                    <div class="glass p-8 rounded-[2.5rem] flex items-start gap-6 group hover:border-emerald-500/50 transition duration-500">
+                        <div class="bg-emerald-600/20 p-4 rounded-2xl text-emerald-400">
+                            <i data-lucide="mail" class="w-6 h-6"></i>
                         </div>
+                        <div>
+                            <h3 class="text-lg font-bold text-white mb-2">Email Resmi</h3>
+                            <p class="text-slate-400 text-sm leading-relaxed italic">fansz.informatika4@school.id</p>
+                        </div>
+                    </div>
 
-                        <div class="flex items-center gap-5 group">
-                            <div class="w-12 h-12 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center text-indigo-500 transition group-hover:bg-indigo-500 group-hover:text-white">
-                                <i data-lucide="mail"></i>
-                            </div>
-                            <div>
-                                <p class="text-[10px] font-black text-slate-500 uppercase tracking-widest">Email</p>
-                                <p class="text-white font-medium">fansz_infor4@school.sch.id</p>
-                            </div>
+                    <div class="glass p-8 rounded-[2.5rem] flex items-start gap-6 group hover:border-purple-500/50 transition duration-500">
+                        <div class="bg-purple-600/20 p-4 rounded-2xl text-purple-400">
+                            <i data-lucide="instagram" class="w-6 h-6"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-bold text-white mb-2">Media Sosial</h3>
+                            <p class="text-slate-400 text-sm leading-relaxed">@fansz_informatika4</p>
                         </div>
                     </div>
                 </div>
 
-                <!-- Map Section -->
-                <div class="glass rounded-[3rem] p-4 overflow-hidden h-[450px]">
-                    <div class="w-full h-full bg-slate-800 rounded-[2.5rem] flex items-center justify-center relative overflow-hidden">
-                        <!-- Placeholder for real Google Map iframe -->
-                        <div class="absolute inset-0 bg-slate-900/50 flex flex-col items-center justify-center gap-4">
-                            <i data-lucide="map" class="w-12 h-12 text-blue-500/20"></i>
-                            <p class="text-xs font-bold text-slate-600 uppercase tracking-widest text-center px-10">Google Maps akan tampil di sini <br> (Gunakan Iframe Embed)</p>
+                <!-- Preview Maps (Visual Placeholder) -->
+                <div class="glass rounded-[3rem] overflow-hidden relative min-h-[400px] border border-white/10 group">
+                    <div class="absolute inset-0 bg-slate-800 flex flex-col items-center justify-center p-8 text-center">
+                        <div class="w-20 h-20 bg-blue-600/10 rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition duration-500">
+                            <i data-lucide="map" class="w-10 h-10 text-blue-500"></i>
                         </div>
-                        <div class="z-10 bg-blue-600 p-3 rounded-full shadow-2xl animate-bounce">
-                            <i data-lucide="map-pin" class="text-white"></i>
-                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">Peta Interaktif</h3>
+                        <p class="text-slate-400 text-sm mb-8">Klik tombol di bawah untuk melihat rute menuju lokasi kami secara detail di Google Maps.</p>
+                        <a href="https://share.google/ZeEj7RdqavkR1Q80V" target="_blank" class="px-8 py-4 bg-white text-slate-900 font-bold rounded-2xl hover:bg-blue-500 hover:text-white transition shadow-xl">
+                            Lihat Lokasi Presisi
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <footer class="py-10 border-t border-white/5 text-center">
+        <p class="text-slate-500 text-sm">© 2024 FANS_Z Informatika 4. XII Informatika Squad.</p>
+    </footer>
 
     <script>lucide.createIcons();</script>
 </body>
